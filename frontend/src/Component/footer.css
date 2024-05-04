@@ -1,0 +1,51 @@
+.footer{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-top: 2px solid rgb(42, 222, 42);
+}
+.b1{
+    display: flex;
+    flex-direction: column;
+}
+.b2{
+   
+}
+.b1>img{
+    padding: 10px;
+    width: 10rem;
+}
+.b3>img{
+    width: 44rem;
+    float: right;
+}
+
+#join{
+    width: 6rem;
+    background: rgb(42, 222, 42);
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.txt{
+    display: flex;
+    gap: 10px;
+}
+.txt>button{
+    background: rgb(42, 222, 42);
+    border: none;
+    border-radius: 30px;
+}
+#b21{
+    background: rgb(42, 222, 42);
+    border: none;
+    border-radius: 30px;
+    padding: 3px 10px;
+    width: max-content;
+    margin-top: 10px;
+}

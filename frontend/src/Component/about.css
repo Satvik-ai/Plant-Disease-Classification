@@ -1,0 +1,75 @@
+.images{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  gap: 70px;
+  margin: 30px;
+}
+#img-h1{
+  text-align: center;
+  text-decoration: overline;
+  margin-top: 20px;
+}
+.image-card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    transition: transform 0.3s;
+    border-radius: 12px;
+  }
+  
+  .image-card img {
+    width: 100%;
+    height: 100%;
+    /* mix-blend-mode: color-burn; */
+    object-fit: cover;
+    background-position: center;
+  }
+  
+  .card-content {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    transition: bottom 0.3s;
+    cursor: pointer;
+  }
+  .card-content>.icons>span{
+    padding: 5px;
+    margin:5px;
+    font-size: 1.5rem;
+    transition: 0.4s all;
+    cursor: pointer;
+  }
+  .icons>span>a{
+    color: #fff;
+  }
+  .card-content>.icons>span>#a1:hover{
+    color: rgb(92, 92, 205);
+  }
+  .card-content>.icons>span>#a2>:hover{
+    color: rgb(174, 15, 63);
+  }
+  .card-content>.icons>span>#a3>:hover{
+    color: rgb(159, 144, 144);
+  }
+  
+  .image-card.hovered .card-content {
+    bottom: 0;
+  }
+  .img-box{
+    display: flex;
+    flex-direction: column;
+  }
+  .img-box>span{
+    text-align: center;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    
+  }

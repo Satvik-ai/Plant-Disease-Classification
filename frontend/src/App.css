@@ -1,0 +1,191 @@
+/* Navbar.css */
+body{
+  /* background: url('./img/glass1.jpeg') no-repeat; */
+  background-size: cover;
+  height: 100vh;
+  scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width:480px) {
+   body{
+    height: 165vh;
+   }
+}
+.img{
+  display: flex;
+  justify-content: center;
+}
+.img>img{
+  width: 40rem;
+  background-size: cover;
+}
+.navbar {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 100;
+    /* background: linear-gradient(90deg,#08F26E,#30D5C8,#00ced1); */
+    
+  }
+  .navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100; /* Adjust the z-index to control stacking order */
+  }
+
+  .logo>img{
+    width: 7rem;
+    margin-left: 30px;
+    filter: contrast(2);
+  }
+  .logo>span{
+    margin-left: 30px;
+  }
+  
+  .nav-links {
+    position: absolute;
+    right: 13rem;
+    list-style: none;
+    display: flex;
+    gap: 80px;
+    /* transition: opacity 0.5s ease; */
+  }
+  /* li animation  */
+  .nav-links {
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+  }
+  
+  .nav-links li a{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+  }
+  
+  .nav-links li a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 10%;
+    width: 0;
+    height: 2.5px;
+    background-color: #333;
+    transition: width 0.3s ease-in-out;
+    transform: translateX(-10%);
+  }
+  
+  .nav-links li a:hover::before {
+    width: 100%;
+    left: 0;
+  }
+  
+  /* .nav-links li {
+    font-size: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+  }
+   */
+  .burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    color: #000000;
+  }
+  
+  @media screen and (max-width: 468px) {
+    .nav-links {
+      z-index: 100;
+      /* display: none; */
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      position: relative;
+      /* top: 65px; */
+      left: 5px;
+      margin: 20px;
+      gap: 50px;
+      padding: 20px;
+      background-color: rgba(17, 25, 40, 0.35);
+      display: none;
+      height: max-content;
+    }
+    .nav-links.open {
+      display: flex;
+      flex-direction: column;
+    }
+    .logo>img{
+      width: 3rem;
+      margin-left: 2px;
+    }
+    .logo{
+      flex-direction: row;
+    }
+    .logo>span{
+      font-size: 1rem;
+      margin: 12px 4px;
+    }
+    .burger {
+      position: absolute;
+      display: block;
+      right: 20px;
+      top: 10px;
+      display: block;
+      z-index: 100;
+    }
+    .icon{
+      font-size: 3rem;
+    }
+    .user-info{
+      margin-right: 3rem;
+    }
+  }
+  .sign-in{
+    margin-right: 15px;
+  }
+  .sign-in>button{
+     background: transparent;
+     font-size: 2rem;
+     border: none;
+     color: #000000;
+     cursor: pointer "sign In";
+  }
+  .user-info{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    display: flex;
+    gap: 10px;
+    margin-left:  30px;
+    align-items: center;
+  }
+  .user-info>img{
+    border-radius: 50%;
+  }
+  .up{
+    display: flex;
+    flex-direction: column;
+  }

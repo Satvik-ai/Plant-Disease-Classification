@@ -1,0 +1,149 @@
+.homepage {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow: hidden;
+  justify-content: center;
+  gap: 5rem;
+  align-items: center;
+  margin: 4rem 0rem;
+}
+#head {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  text-align: center;
+  text-decoration: overline;
+}
+.box1,
+.box2 {
+  margin: 1rem;
+  width: 32rem;
+  height: 30rem;
+  border-radius: 22px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1),
+    /* Shadow at the top */ 0 0 20px rgba(0, 0, 0, 0.1),
+    /* Slightly darker shadow below the first one */ 0 0 30px rgba(0, 0, 0, 0.1); /* Even darker shadow below the second one */
+}
+.box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 50px;
+}
+.box1 > img {
+  width: 12rem;
+}
+.text2 > h1 {
+  font-size: 1.5rem;
+}
+.text2 > span {
+  font-size: 1rem;
+  color: rgb(124, 115, 115);
+}
+.box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.input-box {
+  display: grid;
+  place-items: center;
+  width: 28rem;
+  height: 18rem;
+  border: 3px dashed rgb(142, 136, 136);
+  border-radius: 18px;
+  cursor: pointer;
+}
+.input-box > span {
+  position: relative;
+  top: 4rem;
+  font-size: 4rem;
+}
+.input-box > #up-text {
+  font-size: 1.5rem;
+}
+.input {
+  position: relative;
+  bottom: 8.5rem;
+  background: transparent;
+  width: 28rem;
+  height: 18rem;
+  opacity: 0;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.btn-box {
+  display: flex;
+}
+#btni {
+  width: 12rem;
+  background: green;
+  padding: 10px;
+  border-radius: 14px;
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 5px;
+}
+#dia {
+  display: flex;
+  justify-content: end;
+  margin-right: 10rem;
+}
+.text2 > h1 {
+  font-size: 2rem;
+}
+.buttons {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1),
+    /* Shadow at the top */ 0 0 20px rgba(0, 0, 0, 0.1),
+    /* Slightly darker shadow below the first one */ 0 0 30px rgba(0, 0, 0, 0.1); /* Even darker shadow below the second one */
+  padding: 15px;
+  width: 33rem;
+  border-radius: 18px;
+}
+.btns>button>img{
+  width: 2rem;
+}
+.btns>button{
+  border: none;
+  margin-right: 30px;
+  border-radius: 50%;
+  transition: 0.2s all;
+}
+.btns>button:active{
+background: blue;
+}
+#sel{
+    text-align: center;
+    font-size: 1.3rem;
+}
+.treat{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.treat>h1{
+
+  font-size: 1.8rem;
+}
+#d,#c{
+  font-size: 1.5rem;
+}
+#h1{
+  text-align: center;
+  font-weight: 600;
+}
+#upload-img{
+  width: 28rem;
+  height: 20rem;
+  object-fit: cover;
+  background-position: center;
+  border-radius: 12px;
+}
