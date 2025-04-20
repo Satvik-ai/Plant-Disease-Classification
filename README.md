@@ -2,14 +2,10 @@
 
 ## Image Classification, Python(TensorFlow, Matplotlib, Numpy), FastAPI
 
-• Overview : Trained a CNN model to identify plant diseases from the image of plant leaf and created an API to
-deploy it.
-
-• Process : Imported all the dependencies, loaded the datasets in tensorflow data objects, performed exploratory
-data analysis, and then did data preprocessing like image resizing, data augmentation etc. Trained and tested CNN
-model with softmax activation. Five models were trained one each for identifying disease in blackgram, groundnut,
-pepper, potato and tomato. Then build a backend with the help to FastAPI to deploy the models. Models can be
-accessed via an API. My friend created a frontend using react and then I integrated API to it.
+• Developed a CNN model for plant disease classification using leaf images.
+• Preprocessed images (resizing, augmentation, normalization) to enhance model performance.
+• Developed a FastAPI-based backend for model deployment and API integration.
+• Achieved an accuracy of more than 98% in the classification of plant diseases.
 
 ## Backend
 
