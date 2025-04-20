@@ -3,8 +3,11 @@
 ## Image Classification, Python(TensorFlow, Matplotlib, Numpy), FastAPI
 
 • Developed a CNN model for plant disease classification using leaf images.
+
 • Preprocessed images (resizing, augmentation, normalization) to enhance model performance.
+
 • Developed a FastAPI-based backend for model deployment and API integration.
+
 • Achieved an accuracy of more than 98% in the classification of plant diseases.
 
 ## Backend
